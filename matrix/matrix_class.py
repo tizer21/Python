@@ -120,9 +120,8 @@ class Matrix:
                 for value in row:
                     if not isinstance(value, (int, float)):
                         raise error
-            self.rows = rows
-        else:
-            self.rows = []
+        
+        self.rows = rows
 
     # MATRIX INFORMATION
     def columns(self):
